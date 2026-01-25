@@ -35,3 +35,7 @@
 
 ## 贡献
 欢迎提交 Issue 或 Pull Request 来丰富这套“赛博修仙”设计系统！
+
+## License
+
+[MIT](./LICENSE) © 2026 isdou
