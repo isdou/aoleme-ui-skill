@@ -1,40 +1,90 @@
-# 熬了么 UI Skill (Aoleme UI Skill)
+# Aoleme UI Skill
 
-## 简介
-这是一个专为打造“赛博修仙”风格应用而设计的 UI Skill 包。它包含了一套完整的设计语言、Tailwind 配置、以及 React 组件范式，旨在帮助开发者快速构建出具有深邃神秘感与现代科技感融合的界面。
+Aoleme UI is an OpenClaw-ready skill for generating dark neon dashboards, gamified interfaces, and glassmorphism-heavy React or Tailwind UIs in a distinct cyber-xianxia aesthetic.
 
-核心风格：**赛博修仙 (Cyberpunk Cultivation)**
-- 🌌 **深空黑背景**：沉浸式体验
-- 🔮 **修仙紫主调**：神秘与高贵
-- 💧 **流体动效**：灵动与生机
-- 🧊 **玻璃拟态**：现代感与层次感
+This repository packages that style as a reusable skill plus supporting resource files, so an agent can apply the look consistently across React and Tailwind projects.
 
-## 包含内容
+## What This Skill Is For
 
-本仓库包含以下核心资源：
+Use this skill when you want an agent to:
 
-1.  **[SKILL.md](./SKILL.md)**: 核心指南文件。详细描述了设计系统的视觉规范、配色方案、以及各类组件（按钮、卡片、输入框等）的实现代码。
-2.  **resources/**: 资源目录。
-    - `tailwind.config.js`: 预设的 Tailwind 动画与色彩配置。
-    - `global.css`: 全局样式定义，包含一系列实用的 CSS 工具类。
+- design a dark, mystical, game-like UI
+- restyle an existing React or Tailwind page into a cyber-xianxia direction
+- apply consistent visual tokens, glass surfaces, glow, and liquid status treatments
+- reuse a documented UI language instead of inventing the style from scratch each time
 
-## 如何使用
+This is primarily a design-system skill. It does not provide business logic, APIs, or a packaged component library.
 
-### 作为 Agent Skill 使用
-如果你正在使用支持 Skill 的 AI Agent（如 Antigravity），该 Skill 会为 Agent 提供关于“熬了么”UI 风格的完整上下文。Agent 将能够：
-- 理解并应用特定的配色方案（#020105 背景, #722dcd 主色等）。
-- 直接生成符合风格的 React 组件代码。
-- 遵循性能优化指南编写动画。
+## Example Prompts
 
-### 手动集成
-你也可以手动参考本 Skill 中的设计规范：
+These example prompts are useful both for testing locally and for making the listing more discoverable in ClawHub search:
 
-1.  **配置 Tailwind**: 参考 `resources/tailwind.config.js` 将配置合并到你的项目中。
-2.  **引入样式**: 将 `resources/global.css` 引入你的项目。
-3.  **使用组件**: 参考 `SKILL.md` 中的“组件配方”部分，复制并使用预构建的 UI 组件。
+- Design a cyber-xianxia dashboard for a habit tracker using React and Tailwind.
+- Restyle this page into a dark neon glassmorphism UI with purple glow and liquid progress bars.
+- Build a gamified profile screen with merit points, cultivation levels, and mystical status cards.
+- Create an immersive mobile event page with dark glass panels and restrained sci-fi motion.
+- Turn this plain admin interface into a game-like dashboard without changing its data model.
 
-## 贡献
-欢迎提交 Issue 或 Pull Request 来丰富这套“赛博修仙”设计系统！
+## Repository Contents
+
+- `SKILL.md`: the OpenClaw skill entrypoint with trigger rules, workflow, and adaptation guidance
+- `resources/tailwind.config.js`: Tailwind theme extensions for colors, fonts, animation names, and keyframes
+- `resources/global.css`: shared CSS variables and utility classes for glass, liquid, glow, and performance helpers
+
+## OpenClaw Installation
+
+### Local shared install
+
+Copy this repository to:
+
+```bash
+~/.openclaw/skills/aoleme_ui
+```
+
+### Workspace install
+
+Copy this repository to:
+
+```bash
+<your-project>/skills/aoleme_ui
+```
+
+Then start a new OpenClaw session, or restart the gateway, so the skill is reloaded.
+
+For local testing, prefer copying or syncing the directory instead of symlinking it. OpenClaw skips skill paths that resolve outside the configured workspace root.
+
+## How The Skill Works
+
+The skill tells the agent to:
+
+1. inspect the host project before making stylistic changes
+2. read the Tailwind and CSS resources from the skill directory
+3. merge only the needed tokens and helper classes
+4. apply the visual system without breaking the existing product structure
+5. preserve accessibility, responsiveness, and runtime performance
+
+The skill intentionally warns against blindly importing global rules such as `body { overflow: hidden; }` into regular application pages.
+
+## ClawHub Readiness
+
+This repository is structured to be publishable as a ClawHub skill:
+
+- `SKILL.md` uses a snake_case skill name
+- frontmatter includes a concise description and publishable metadata
+- resource references are written using `{baseDir}` inside the skill instructions
+- the body is written for agent execution, not just human design documentation
+
+Before publishing, test the skill locally with a few real prompts in OpenClaw and confirm the generated changes match your quality bar.
+
+See [`PUBLISHING.md`](./PUBLISHING.md) for a tested local install flow, verification commands, commit steps, and publish commands.
+
+## Manual Use Without OpenClaw
+
+You can also use the resources directly:
+
+1. merge the needed parts of `resources/tailwind.config.js` into your Tailwind config
+2. copy or import the necessary utilities from `resources/global.css`
+3. follow the component and styling guidance in `SKILL.md`
 
 ## License
 
