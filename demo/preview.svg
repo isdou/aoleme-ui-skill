@@ -60,7 +60,7 @@
     <path d="M1440 0V960" stroke="white"/>
   </g>
 
-  <text x="130" y="138" fill="#D8C8FF" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="24" font-weight="700" letter-spacing="0.34em">CYBER XIANXIA UI SKILL</text>
+  <text x="130" y="138" fill="#D8C8FF" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="24" font-weight="700" letter-spacing="0.34em">CYBER FANTASY UI SKILL</text>
   <text x="128" y="252" fill="#F5F1FF" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="88" font-weight="700">Dark neon glass</text>
   <text x="128" y="338" fill="#F5F1FF" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="88" font-weight="700">for dashboards</text>
   <text x="128" y="430" fill="#D4C8F4" font-family="Noto Sans SC, sans-serif" font-size="30">Mystical sci-fi depth, liquid progress, and game-like hierarchy for React and Tailwind surfaces.</text>

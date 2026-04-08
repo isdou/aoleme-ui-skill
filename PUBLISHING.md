@@ -1,6 +1,6 @@
 # Publishing
 
-This document captures a tested local install flow for `cyber_xianxia_ui`, plus the git and ClawHub commands needed to publish it.
+This document captures a tested local install flow for `cyber_fantasy_ui`, plus the git and ClawHub commands needed to publish it.
 
 ## 1. Local Install Test
 
@@ -19,19 +19,19 @@ mkdir -p /Users/suxiaohan/.openclaw/chat-workspace/skills
 Copy the skill into the workspace. Do not symlink it from outside the workspace root:
 
 ```bash
-rsync -av --delete --exclude .git ./ /Users/suxiaohan/.openclaw/chat-workspace/skills/cyber_xianxia_ui/
+rsync -av --delete --exclude .git ./ /Users/suxiaohan/.openclaw/chat-workspace/skills/cyber_fantasy_ui/
 ```
 
 Verify that OpenClaw can discover the skill:
 
 ```bash
-openclaw skills info cyber_xianxia_ui --json
+openclaw skills info cyber_fantasy_ui --json
 openclaw skills list --json
 ```
 
 Expected result:
 
-- `name` should be `cyber_xianxia_ui`
+- `name` should be `cyber_fantasy_ui`
 - `source` should be `openclaw-workspace`
 - `eligible` should be `true`
 - `emoji` should be `🪷`
@@ -41,7 +41,7 @@ Expected result:
 
 Use prompts like these in a fresh OpenClaw session:
 
-- Design a cyber-xianxia dashboard for a habit tracker using React and Tailwind.
+- Design a cyber-fantasy dashboard for a habit tracker using React and Tailwind.
 - Restyle this page into a dark neon glassmorphism UI with purple glow and liquid progress bars.
 - Build a gamified profile screen with merit points, cultivation levels, and mystical status cards.
 
@@ -62,7 +62,7 @@ git add README.md SKILL.md PUBLISHING.md demo/
 Commit:
 
 ```bash
-git commit -m "Rename and polish cyber_xianxia_ui skill"
+git commit -m "Rename skill to cyber_fantasy_ui"
 ```
 
 ## 4. Publish Prerequisites
@@ -89,7 +89,7 @@ npx clawhub login
 Publish from the repository root:
 
 ```bash
-npx clawhub publish . --slug cyber-xianxia-ui --name "Cyber Xianxia UI Skill" --version 1.1.0
+npx clawhub publish . --slug cyber-fantasy-ui --name "Cyber Fantasy UI Skill" --version 1.1.1
 ```
 
 If the CLI supports additional options in your installed version, inspect them with:
