@@ -1,19 +1,19 @@
-# Cyber Xianxia UI Skill / 赛博修仙 UI Skill
+# Cyber Fantasy UI Skill / 赛博奇幻 UI Skill
 
 > Formerly Aoleme UI. A discoverable OpenClaw skill for dark neon dashboards, glassmorphism-heavy interfaces, and gamified React or Tailwind UI generation.
 >
-> 原名 Aoleme UI。一个更容易被搜索发现的 OpenClaw 设计类 skill，适合生成暗色霓虹、玻璃拟态、游戏化的 React / Tailwind 界面。
+> 原名 Aoleme UI。一个更容易被搜索发现的 OpenClaw 设计类 skill，适合生成暗色霓虹、玻璃拟态、游戏化的 React / Tailwind 界面，整体风格更偏“赛博奇幻”而不是直接使用 xianxia 术语。
 
 <p align="center">
   <img src="https://img.shields.io/badge/OpenClaw-Skill-111827" alt="OpenClaw Skill">
-  <img src="https://img.shields.io/badge/Style-Cyber--Xianxia-7C3AED" alt="Cyber Xianxia">
+  <img src="https://img.shields.io/badge/Style-Cyber--Fantasy-7C3AED" alt="Cyber Fantasy">
   <img src="https://img.shields.io/badge/Use%20Case-Dashboard%20%7C%20Gamified%20UI-0EA5E9" alt="Use Case">
   <img src="https://img.shields.io/badge/License-MIT-2563EB" alt="License">
 </p>
 
 ## Demo / 效果预览
 
-![Cyber Xianxia UI demo](./demo/preview.svg)
+![Cyber Fantasy UI demo](./demo/preview.svg)
 
 - Preview file: [`demo/index.html`](./demo/index.html)
 - Demo stylesheet: [`demo/styles.css`](./demo/styles.css)
@@ -27,7 +27,7 @@ This demo shows the core visual language of the skill: dark layered surfaces, cu
 Use this skill when you want OpenClaw to:
 
 - design a dark, mystical, game-like dashboard
-- restyle an existing React or Tailwind page into a cyber-xianxia direction
+- restyle an existing React or Tailwind page into a cyber-fantasy direction
 - apply glow, glass surfaces, liquid progress bars, and immersive UI patterns consistently
 
 适合这些场景：
@@ -51,13 +51,13 @@ Not for:
 
 ## Example Prompts / 示例 Prompt
 
-- Design a cyber-xianxia dashboard for a habit tracker using React and Tailwind.
+- Design a cyber-fantasy dashboard for a habit tracker using React and Tailwind.
 - Restyle this page into a dark neon glassmorphism UI with purple glow and liquid progress bars.
 - Build a gamified profile screen with merit points, cultivation levels, and mystical status cards.
 - Create an immersive mobile event page with dark glass panels and restrained sci-fi motion.
 - Turn this plain admin interface into a game-like dashboard without changing its data model.
 
-- 用 React 和 Tailwind 做一个赛博修仙风格的习惯打卡仪表盘。
+- 用 React 和 Tailwind 做一个赛博奇幻风格的习惯打卡仪表盘。
 - 把这个页面改造成暗色霓虹玻璃拟态界面，带紫色发光和液态进度条。
 - 做一个带功德值、境界等级和状态卡片的游戏化个人主页。
 - 做一个移动端优先的沉浸式活动页，保留现有数据结构但整体风格改成修仙科技感。
@@ -89,15 +89,15 @@ Not for:
 ### Shared install / 全局安装
 
 ```bash
-mkdir -p ~/.openclaw/skills/cyber_xianxia_ui
-rsync -av ./ ~/.openclaw/skills/cyber_xianxia_ui/
+mkdir -p ~/.openclaw/skills/cyber_fantasy_ui
+rsync -av ./ ~/.openclaw/skills/cyber_fantasy_ui/
 ```
 
 ### Workspace install / 工作区安装
 
 ```bash
-mkdir -p <your-project>/skills/cyber_xianxia_ui
-rsync -av ./ <your-project>/skills/cyber_xianxia_ui/
+mkdir -p <your-project>/skills/cyber_fantasy_ui
+rsync -av ./ <your-project>/skills/cyber_fantasy_ui/
 ```
 
 Start a new OpenClaw session after installing.
@@ -107,21 +107,21 @@ Start a new OpenClaw session after installing.
 ## Verify / 验证
 
 ```bash
-openclaw skills info cyber_xianxia_ui --json
+openclaw skills info cyber_fantasy_ui --json
 openclaw skills list --json
 ```
 
 Expected:
 
-- `name` is `cyber_xianxia_ui`
+- `name` is `cyber_fantasy_ui`
 - `eligible` is `true`
-- the description mentions cyber-xianxia, dark neon, or gamified UI
+- the description mentions cyber-fantasy, dark neon, or gamified UI
 
 验证通过时应看到：
 
-- `name` 为 `cyber_xianxia_ui`
+- `name` 为 `cyber_fantasy_ui`
 - `eligible` 为 `true`
-- 描述中出现 cyber-xianxia、dark neon、gamified UI 等关键词
+- 描述中出现 cyber-fantasy、dark neon、gamified UI 等关键词
 
 ## Manual Use Without OpenClaw / 不接 OpenClaw 也能用
 
@@ -137,25 +137,26 @@ Expected:
 
 Public-facing name:
 
-- `Cyber Xianxia UI Skill`
+- `Cyber Fantasy UI Skill`
 
 Internal skill key:
 
-- `cyber_xianxia_ui`
+- `cyber_fantasy_ui`
 
 Legacy alias kept in docs:
 
 - `Aoleme UI`
+- `Cyber Xianxia UI Skill`
 
-对外展示名改成了更易搜索的 `Cyber Xianxia UI Skill`，内部 skill key 改为 `cyber_xianxia_ui`，文档中保留 `Aoleme UI` 作为历史别名，便于老用户识别。
+对外展示名改成了更容易被英文用户理解和搜索的 `Cyber Fantasy UI Skill`，内部 skill key 改为 `cyber_fantasy_ui`，文档中保留 `Aoleme UI` 和 `Cyber Xianxia UI Skill` 作为历史别名，便于老用户识别。
 
 ## Publish / 发布
 
 ```bash
 git add .
-git commit -m "Rename and polish cyber_xianxia_ui skill"
+git commit -m "Rename skill to cyber_fantasy_ui"
 npx clawhub login
-npx clawhub publish . --slug cyber-xianxia-ui --name "Cyber Xianxia UI Skill" --version 1.1.0
+npx clawhub publish . --slug cyber-fantasy-ui --name "Cyber Fantasy UI Skill" --version 1.1.1
 ```
 
 If `clawhub` fails under your current Node version, switch to an LTS runtime such as Node 20 and retry.

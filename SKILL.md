@@ -1,15 +1,15 @@
 ---
-name: cyber_xianxia_ui
-description: Generate dark neon cyber-xianxia dashboards, glassmorphism surfaces, and gamified React and Tailwind UIs.
+name: cyber_fantasy_ui
+description: Generate dark neon cyber-fantasy dashboards, glassmorphism surfaces, and gamified React and Tailwind UIs.
 user-invocable: true
-metadata: {"openclaw":{"emoji":"🪷","homepage":"https://github.com/isdou/aoleme-ui-skill"},"author":"isdou","license":"MIT","tags":["ui","design-system","tailwind","react","glassmorphism","frontend","cyberpunk","dashboard","gamified","neon","dark-ui","xianxia","cultivation","fantasy-ui","mobile-ui"],"aliases":["aoleme_ui","aoleme","cyber xianxia ui"]}
+metadata: {"openclaw":{"emoji":"🪷","homepage":"https://github.com/isdou/aoleme-ui-skill"},"author":"isdou","license":"MIT","tags":["ui","design-system","tailwind","react","glassmorphism","frontend","cyberpunk","dashboard","gamified","neon","dark-ui","fantasy-ui","mobile-ui","mystic-ui","game-ui"],"aliases":["aoleme_ui","aoleme","cyber xianxia ui","cyber_xianxia_ui","cyber fantasy ui"]}
 ---
 
-# Cyber Xianxia UI Skill
+# Cyber Fantasy UI Skill
 
-Also known as Aoleme UI in earlier versions of this repository.
+Also known as Aoleme UI and Cyber Xianxia UI Skill in earlier versions of this repository.
 
-Use this skill when the user wants a dark, cyber-xianxia, neon, glassmorphism, or game-like interface, especially in React and Tailwind projects.
+Use this skill when the user wants a dark, cyber-fantasy, neon, glassmorphism, or game-like interface, especially in React and Tailwind projects.
 
 This skill provides a visual system, reusable component patterns, and implementation guidance. It is best suited for dashboards, gamified pages, member systems, event pages, status panels, and immersive app surfaces.
 
@@ -17,8 +17,8 @@ This skill provides a visual system, reusable component patterns, and implementa
 
 Typical prompts that should match this skill:
 
-- Design a dark neon dashboard for a cultivation progress tracker in React and Tailwind.
-- Restyle this membership center into a cyber-xianxia glassmorphism interface.
+- Design a dark neon dashboard for a fantasy progress tracker in React and Tailwind.
+- Restyle this membership center into a cyber-fantasy glassmorphism interface.
 - Build a game-like profile page with purple glow, liquid progress bars, and glass cards.
 - Turn this plain admin page into a mystical sci-fi event page without changing the data structure.
 - Create a mobile-first gamified task screen with dark panels, glowing actions, and merit status indicators.
@@ -28,7 +28,7 @@ Typical prompts that should match this skill:
 
 Use this skill when the request mentions one or more of the following:
 
-- cyberpunk, cultivation, xianxia, mystical sci-fi, neon, glassmorphism
+- cyberpunk, cyber fantasy, mystical sci-fi, dark fantasy, neon, glassmorphism
 - dark game-like dashboard or immersive activity page
 - purple-led visual system with glowing surfaces and liquid progress effects
 - a need to restyle an existing React or Tailwind UI into this aesthetic
