@@ -1,11 +1,13 @@
 ---
-name: aoleme_ui
+name: cyber_xianxia_ui
 description: Generate dark neon cyber-xianxia dashboards, glassmorphism surfaces, and gamified React and Tailwind UIs.
 user-invocable: true
-metadata: {"openclaw":{"emoji":"🪷","homepage":"https://github.com/isdou/aoleme-ui-skill"},"author":"isdou","license":"MIT","tags":["ui","design-system","tailwind","react","glassmorphism","frontend","cyberpunk","dashboard","gamified","neon","dark-ui","xianxia"]}
+metadata: {"openclaw":{"emoji":"🪷","homepage":"https://github.com/isdou/aoleme-ui-skill"},"author":"isdou","license":"MIT","tags":["ui","design-system","tailwind","react","glassmorphism","frontend","cyberpunk","dashboard","gamified","neon","dark-ui","xianxia","cultivation","fantasy-ui","mobile-ui"],"aliases":["aoleme_ui","aoleme","cyber xianxia ui"]}
 ---
 
-# Aoleme UI
+# Cyber Xianxia UI Skill
+
+Also known as Aoleme UI in earlier versions of this repository.
 
 Use this skill when the user wants a dark, cyber-xianxia, neon, glassmorphism, or game-like interface, especially in React and Tailwind projects.
 
@@ -20,6 +22,7 @@ Typical prompts that should match this skill:
 - Build a game-like profile page with purple glow, liquid progress bars, and glass cards.
 - Turn this plain admin page into a mystical sci-fi event page without changing the data structure.
 - Create a mobile-first gamified task screen with dark panels, glowing actions, and merit status indicators.
+- Restyle this app into a cultivation-themed dark UI with glass cards and luminous status badges.
 
 ## When To Use
 

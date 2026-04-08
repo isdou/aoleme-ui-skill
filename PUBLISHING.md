@@ -1,6 +1,6 @@
 # Publishing
 
-This document captures a tested local install flow for `aoleme_ui`, plus the git and ClawHub commands needed to publish it.
+This document captures a tested local install flow for `cyber_xianxia_ui`, plus the git and ClawHub commands needed to publish it.
 
 ## 1. Local Install Test
 
@@ -19,19 +19,19 @@ mkdir -p /Users/suxiaohan/.openclaw/chat-workspace/skills
 Copy the skill into the workspace. Do not symlink it from outside the workspace root:
 
 ```bash
-rsync -av --delete --exclude .git ./ /Users/suxiaohan/.openclaw/chat-workspace/skills/aoleme_ui/
+rsync -av --delete --exclude .git ./ /Users/suxiaohan/.openclaw/chat-workspace/skills/cyber_xianxia_ui/
 ```
 
 Verify that OpenClaw can discover the skill:
 
 ```bash
-openclaw skills info aoleme_ui --json
+openclaw skills info cyber_xianxia_ui --json
 openclaw skills list --json
 ```
 
 Expected result:
 
-- `name` should be `aoleme_ui`
+- `name` should be `cyber_xianxia_ui`
 - `source` should be `openclaw-workspace`
 - `eligible` should be `true`
 - `emoji` should be `🪷`
@@ -50,19 +50,19 @@ Use prompts like these in a fresh OpenClaw session:
 Review the diff:
 
 ```bash
-git diff -- README.md SKILL.md PUBLISHING.md
+git diff -- README.md SKILL.md PUBLISHING.md demo/
 ```
 
 Stage the release docs:
 
 ```bash
-git add README.md SKILL.md PUBLISHING.md
+git add README.md SKILL.md PUBLISHING.md demo/
 ```
 
 Commit:
 
 ```bash
-git commit -m "Prepare Aoleme UI skill for ClawHub publishing"
+git commit -m "Rename and polish cyber_xianxia_ui skill"
 ```
 
 ## 4. Publish Prerequisites
@@ -89,7 +89,7 @@ npx clawhub login
 Publish from the repository root:
 
 ```bash
-npx clawhub publish
+npx clawhub publish . --slug cyber-xianxia-ui --name "Cyber Xianxia UI Skill" --version 1.1.0
 ```
 
 If the CLI supports additional options in your installed version, inspect them with:
