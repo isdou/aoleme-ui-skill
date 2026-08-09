@@ -11,6 +11,7 @@ Formerly Aoleme UI. A discoverable OpenClaw skill for dark neon dashboards, glas
   <img src="https://img.shields.io/badge/Style-Cyber--Fantasy-7C3AED" alt="Cyber Fantasy">
   <img src="https://img.shields.io/badge/Use%20Case-Dashboard%20%7C%20Gamified%20UI-0EA5E9" alt="Use Case">
   <img src="https://img.shields.io/badge/License-MIT-2563EB" alt="License">
+  <a href="https://skills.sh/isdou/aoleme-ui-skill"><img src="https://skills.sh/b/isdou/aoleme-ui-skill" alt="skills.sh installs"></a>
 </p>
 
 ## Demo
@@ -70,6 +71,14 @@ Not for:
 - `PUBLISHING.md` - local verification and release steps
 
 ## Install
+
+### Skills CLI (recommended)
+
+```bash
+npx skills add https://github.com/isdou/aoleme-ui-skill --skill cyber_fantasy_ui
+```
+
+Use the manual options below only when your agent is not supported by the Skills CLI.
 
 ### Shared install
 

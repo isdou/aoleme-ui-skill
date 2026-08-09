@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/Style-Cyber--Fantasy-7C3AED" alt="Cyber Fantasy">
   <img src="https://img.shields.io/badge/Use%20Case-Dashboard%20%7C%20Gamified%20UI-0EA5E9" alt="Use Case">
   <img src="https://img.shields.io/badge/License-MIT-2563EB" alt="License">
+  <a href="https://skills.sh/isdou/aoleme-ui-skill"><img src="https://skills.sh/b/isdou/aoleme-ui-skill" alt="skills.sh 安装量"></a>
 </p>
 
 ## 效果预览
@@ -70,6 +71,14 @@
 - `PUBLISHING.md` - 本地验证与发布步骤
 
 ## 安装方式
+
+### Skills CLI（推荐）
+
+```bash
+npx skills add https://github.com/isdou/aoleme-ui-skill --skill cyber_fantasy_ui
+```
+
+仅当你的 agent 不受 Skills CLI 支持时，才需要使用下方手动安装方式。
 
 ### 全局安装
 
